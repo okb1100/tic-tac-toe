@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Board>
+      <div class="title">
+        Tic Tac Toe
+      </div>
+    </Board>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Board from './components/Board.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Board
   }
 }
 </script>
@@ -22,7 +25,22 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: white;
+  display: flex;
+  width: 100vw;
+ height: 100vh;
+ justify-content: center;
+  align-items: center;
+  background-color: black; 
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+.title{
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  font-family: 'Fira Code';
+  color: #d2d2d2;
 }
 </style>
